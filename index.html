@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Currículo online de João de Cristo, estudante da Faculdade FACS." />
   <title>Currículo João de Cristo - FACS</title>
   <style>
     /* Reset básico */
@@ -15,7 +16,7 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #4f46e5, #3b82f6);
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -71,7 +72,11 @@
     .button:hover,
     .button:focus {
       background-color: #818cf8;
-      outline: none;
+    }
+
+    .button:focus {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
     }
 
     /* Animação de entrada */
