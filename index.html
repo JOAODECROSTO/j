@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Currículo João de Cristo - FACS</title>
   <style>
     /* Reset básico */
@@ -37,6 +37,7 @@
       text-align: center;
       box-shadow: 0 10px 20px rgba(0,0,0,0.25);
       animation: fadeIn 1s ease-in-out;
+      max-width: 400px;
     }
 
     .card h1 {
@@ -64,10 +65,13 @@
       border-radius: 30px;
       font-weight: bold;
       transition: background-color 0.3s ease;
+      display: inline-block;
     }
 
-    .button:hover {
+    .button:hover,
+    .button:focus {
       background-color: #818cf8;
+      outline: none;
     }
 
     /* Animação de entrada */
@@ -85,10 +89,10 @@
 </head>
 <body>
   <div class="container">
-    <div class="card">
+    <div class="card" role="main" aria-label="Cartão de apresentação de João de Cristo">
       <h1>João de Cristo</h1>
       <p class="subtitle">Faculdade FACS</p>
-      <p class="desc">Bem-vindo ao meu currículo online! Clique abaixo para visualizar minha trajetória .</p>
+      <p class="desc">Bem-vindo ao meu currículo online. Clique abaixo para visualizar minha trajetória.</p>
       <a href="curriculo.html" class="button">Ver Currículo</a>
     </div>
   </div>
